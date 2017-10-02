@@ -10,6 +10,11 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
+            Personne p1 = new Personne();
+            Console.WriteLine(p1);
+            Personne p2 = new Personne("Lucie", 12);
+            Console.WriteLine(p2);
+            Console.ReadKey();
         }
     }
 }
