@@ -10,21 +10,24 @@ namespace ConsoleApplication1
     {
         public string Prenom { get; set; }
         public int Age { get; set; }
+        public string Nom { get; set; }
 
         public Personne()
         {
             Prenom = "New";
+            Nom = "new";
             Age = 0;
         }
-        public Personne(string prenom, int age)
+
+        public Personne(string nom) : this()
         {
-            Prenom = prenom;
-            Age = age;
+            Nom = nom;
         }
+
 
         public override string ToString()
         {
-            return $"Mon prénom est {Prenom} et mon age est de {Age}.";
+            return $"Mon prénom est {Prenom}, mon nom est {Nom} et mon age est de {Age}.";
         }
     }
 }

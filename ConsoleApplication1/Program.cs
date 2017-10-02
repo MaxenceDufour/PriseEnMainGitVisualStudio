@@ -12,7 +12,7 @@ namespace ConsoleApplication1
         {
             Personne p1 = new Personne();
             Console.WriteLine(p1);
-            Personne p2 = new Personne("Lucie", 12);
+            Personne p2 = new Personne("Bienvenue");
             Console.WriteLine(p2);
             Console.ReadKey();
         }
